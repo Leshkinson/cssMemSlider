@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="normalize.css" />
+        <link rel="stylesheet" href="style.css" />
+        <title>CssMemSlider</title>
+    </head>
+    <body class="body">
+        <div class="container">
+            <div class="slider">
+                <input type="radio" name="input" id="first-input" checked />
+                <input type="radio" name="input" id="second-input" />
+                <input type="radio" name="input" id="third-input" />
+                <input type="radio" name="input" id="fourth-input" />
+                <div class="slider-container">
+                    <div class="slide">
+                        <img class="responsive" src="./src/dicaprio.jpg" alt="Dicaprio" />
+                    </div>
+                    <div class="slide">
+                        <img class="responsive" src="./src/tramp.jpg" alt="Tramp" />
+                    </div>
+                    <div class="slide">
+                        <img class="responsive" src="./src/horsemen.jpg" alt="Horsemen" />
+                    </div>
+                    <div class="slide">
+                        <img class="responsive" src="./src/ring.jpg" alt="Ring" />
+                    </div>
+                </div>
+                <div class="text-wrapper">
+                    <div class="text-slider-container">
+                        <div class="text-slider">
+                            <div class="mem-text-container">
+                                <p class="mem-text">Do you speak English?</p>
+                            </div>
+                            <div class="mem-text-container">
+                                <p class="mem-text">How to pronounce "Th" correctly</p>
+                            </div>
+                            <div class="mem-text-container">
+                                <p class="mem-text">The Four Horsemen <br />of the Apocalypse</p>
+                            </div>
+                            <div class="mem-text-container">
+                                <p class="mem-text">You can't just learn English</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="navigation">
+                        <label for="first-input" class="point"><div class="marker s1"></div></label>
+                        <label for="second-input" class="point"><div class="marker s2"></div></label>
+                        <label for="third-input" class="point"><div class="marker s3"></div></label>
+                        <label for="fourth-input" class="point"><div class="marker s4"></div></label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.body {
+    background-color: rgb(39, 33, 33);
+}
+.container {
+    margin: 0 auto;
+    max-width: 75em;
+    max-height: 43em;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+input {
+    visibility: hidden; 
+}
+.slider {
+    width: 400%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.slide {
+    width: 25%;
+    transition: all .6s ease-out;
+}
+.slider-container {
+    display: flex;
+    transition: all 0.4s ease;
+    
+}
+.responsive {
+    width: 100%;
+    max-width: 75em; 
+    height: 100%;
+    max-height: 100vh;
+
+}
+.text-wrapper {
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.text-slider-container {
+    overflow: hidden;
+}
+.text-slider {
+    display: flex;
+    width: 400%;
+    transition: all 0.6s ease 0s;
+}
+.mem-text-container {
+    width: 25%;
+    text-align: left;
+    margin: auto 0;
+}
+.mem-text {
+    font-family: "Georgia", serif;
+    font-style: normal;
+    text-align: left;
+    width: 100%;
+    font-size: 1.25em;
+    font-weight: 400;
+    line-height: 110%;
+    letter-spacing: 0.06em;
+    color: #F1CDB3;
+    margin-left:0.8em;
+}
+
+
+.navigation {
+    
+    display: flex;
+    justify-content: flex-end;
+}
+.point {
+    display: inline-block;
+    cursor: pointer;
+    width: 3em;
+    height: 3em;
+    padding: 1em;
+}
+
+
+.point:hover .marker {  
+    background: rgb(255, 255, 255);
+}
+.point:active .marker {
+    transform: scale(1.5);
+    background: transparent;
+}
+.marker {
+    margin: 25% auto;
+    background: transparent;
+    border: 0.2em solid #F1CDB3;
+    width: 40%;
+    height: 40%;
+    border-radius: 50%;
+}
+
+#first-input:checked ~ .text-wrapper .navigation .s1 {
+    background-color: #fff;
+} 
+#second-input:checked ~ .text-wrapper .navigation .s2 {
+    background-color: #fff;
+} 
+#third-input:checked ~ .text-wrapper .navigation .s3 {
+    background-color: #fff;
+} 
+#fourth-input:checked ~ .text-wrapper .navigation .s4 {
+    background-color: #fff;
+}
+#first-input:checked ~ .slider-container {
+    transform: translate(0%, 0%);
+}
+#second-input:checked ~ .slider-container {
+    transform: translate(-25%, 0%);
+}
+#third-input:checked ~ .slider-container {
+    transform: translate(-50%, 0%);
+}
+#fourth-input:checked ~ .slider-container {
+    transform: translate(-75%, 0%);
+}
+#first-input:checked ~ .text-wrapper .text-slider {
+    transform: translate(0%, 0%);
+}
+#second-input:checked ~ .text-wrapper .text-slider {
+    transform: translate(-25%, 0%);
+}
+#third-input:checked ~ .text-wrapper .text-slider {
+    transform: translate(-50%, 0%);
+}
+#fourth-input:checked ~ .text-wrapper .text-slider {
+    transform: translate(-75%, 0%);
+}
